@@ -5,7 +5,7 @@ const SponsorsCard = ({cardImg, cardName, cardOther}) => {
   return (
     <div className="sponsor_card">
       <div className="cardImg">
-        <img src={cardImg} alt="Global Temi" />
+        <img src={cardImg} alt="image"/>
       </div>
       <div className="cardContent">
         <div>
