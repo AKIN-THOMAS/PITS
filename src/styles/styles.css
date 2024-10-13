@@ -320,19 +320,20 @@ body {
   flex-wrap: wrap;
 }
 
-.header .btn {
+/* .header .btn {
   background-color: #b5852d;
   padding: 10px 20px;
   color: white;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
 .btn button {
   width: 153px;
+  background-color: #b5852d;
   height: 45px;
   color: white;
-  border: 1px solid #ffffff;
+  border: 1px solid #b5852d;
   border-radius: 5px;
   font-size: 17px;
   font-weight: 600;
