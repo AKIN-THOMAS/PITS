@@ -15,12 +15,14 @@ const About = () => {
         <div>
           <h2 className="about_header">About Conference</h2>
           <p className="about_text">
-            {" "}
             The convener of the Light conference Haoma Worgwu said in one of her
             interviews that the kingdom of God is lacking human capital in the
             market place, Priests in the systems was born out of a desire to see
             people function as priests in whatever mountain God is sending them
-            to and not just the mountain of religion. There is a need for an
+            to and not just the mountain of religion.
+          </p>
+          <p className="about_text">
+          There is a need for an
             upsurge of priests in this coming generation that will take the
             mountains for God, Unbelievers will no longer be seen as the pilots
             and the commanders of this mountains, The Light of believers will
@@ -29,11 +31,11 @@ const About = () => {
             Newton If I have seen further than others, it is by standing upon
             the shoulders of giants and we agree that we can take place in
             purpose by following the guidance of those who have gone ahead of
-            us, hence the need for the program{" "}
-            <span>PRIESTS IN THE SYSTEMS</span>.
+            us, hence the need for the program
           </p>
+            {/* <span>PRIESTS IN THE SYSTEMS</span>. */}
         </div>
-        <div className="side_under">
+        {/* <div className="side_under">
           <div className="under1">
             <p>Landmark University</p>
           </div>
@@ -49,7 +51,7 @@ const About = () => {
               <p>Speakers</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

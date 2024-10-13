@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
@@ -20,6 +20,8 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background-color: #1f262e;
+  color: #fff;
 }
 
 .btn button {
@@ -36,7 +38,6 @@
   outline: none;
 }
 
-/* Landing */
 .landing {
   display: flex;
   justify-content: center;
@@ -77,15 +78,7 @@
   font-size: 14px;
 }
 
-/* About */
-/* .about {
-  width: 80%;
-  height: 694px;
-  display: flex;
-  gap: 140px;
-  justify-content: center;
-  align-items: center;
-} */
+
 .side_images {
   position: relative;
   width: 528px;
@@ -158,9 +151,15 @@
   color: #ffffff;
 }
 
-/* Sponsorship */
-/* Sponsorship Card */
 
+.speakerTitle {
+  font-size: 50px;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: left;
+  margin: 60px;
+  line-height: 40.92px;
+}
 .sponsor_card {
   box-sizing: border-box;
   width: 362px;
@@ -178,9 +177,7 @@
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
 }
-/* .sponsors-grid > * {
-  width: 80%;
-} */
+
 .cardImg img {
   border-radius: 50%;
   position: relative;
@@ -208,4 +205,343 @@
   color: #ffffff;
   text-align: center;
   line-height: 22.92px;
+}
+
+
+.footer {
+  margin-top: 40px;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter {
+  flex: 2;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  color: white;
+  margin-right: 20px;
+  width: 250px;
+  outline: none;
+}
+
+.newsletter-form button {
+  background-color: #b5852d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.newsletter-form button:hover {
+  background-color: #916f20; 
+}
+
+.footer-links {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-links p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #b5852d;
+} */
+
+
+/* Reset and font settings */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: linear-gradient(176.57deg, #1f262e 27.15%, #1f262e 99.74%);
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.all {
+  background: linear-gradient(176.57deg, #1f262e 27.15%, #1f262e 99.74%);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 10px 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header .btn {
+  background-color: #b5852d;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn button {
+  width: 153px;
+  height: 45px;
+  color: white;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Landing Section */
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: 60px;
+  flex-wrap: wrap;
+}
+
+.pits {
+  text-align: left;
+  max-width: 100%;
+}
+
+.pits_text {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.countdown {
+  font-size: 24px;
+}
+
+.countdown span {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.countdown span small {
+  display: block;
+  font-size: 14px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .pits_text {
+    font-size: 36px;
+  }
+
+  .landing {
+    flex-direction: column;
+    gap: 40px;
+    margin: 40px;
+  }
+}
+
+/* About Section */
+.side_images {
+  max-width: 100%;
+  margin: auto;
+}
+
+.about1, .about2 {
+  position: relative;
+  max-width: 50%;
+}
+
+.about_header {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about_text {
+  font-size: 18px;
+  text-align: center;
+  margin: 0 20px;
+  line-height: 1.6;
+}
+
+.side2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #1f262e;
+  margin-top: 40px;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.newsletter {
+  flex: 2;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  color: white;
+  margin-right: 20px;
+  outline: none;
+  width: 100%;
+  max-width: 300px;
+}
+
+.newsletter-form button {
+  background-color: #b5852d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.footer-links {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Sponsor Section */
+.speakerTitle {
+  font-size: 50px;
+  font-weight: 800;
+  margin: 60px;
+}
+
+.sponsors-grid {
+  display: grid;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.sponsor_card {
+  background: #262d36;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.sponsor_card:hover {
+  transform: scale(1.05);
+}
+
+.cardImg img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.cardContent {
+  padding: 20px;
+}
+
+.cardName {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cardOther {
+  font-size: 16px;
+}
+
+/* Responsive adjustments for footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+  }
 }

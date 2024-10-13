@@ -3,10 +3,11 @@ import Header from "./Header";
 import rad from "../assets/landing-tobi.jpg";
 import About from "./About";
 import Sponsors from "./Sponsors";
+import Footer from "./Footer";
 
 const PITS = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2024-05-25") - +new Date();
+    const difference = +new Date("2024-11-30") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -66,6 +67,9 @@ const PITS = () => {
       </section>
       <section>
         <Sponsors />
+      </section>
+      <section>
+        <Footer/>
       </section>
     </div>
   );
